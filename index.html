@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RepairSync AI — Powering Smarter Gadget Repairs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ Floating Navbar ============ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="brand">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="7" y="2" width="10" height="18" rx="2" stroke="#A7CF96" stroke-width="1.6"/>
+          <circle cx="12" cy="16" r="1.2" fill="#A7CF96"/>
+          <path d="M15 5.5c2.5 0.5 4 2.2 4 4.5" stroke="#A7CF96" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand-name">RepairSync</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#docs">Docs</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#changelog">Changelog</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="#signin" class="btn btn-outline">Sign In</a>
+      <a href="#signup" class="btn btn-dark">Sign Up</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="nav-spacer"></div>
+
+<!-- ============ Hero ============ -->
+<section class="hero">
+  <h1><span class="accent">Powering Smarter</span> Gadget Repairs</h1>
+  <p>Streamline gadget repairs with AI-driven diagnostics. Manage service requests, track repair workflows, and keep customers updated every step of the way.</p>
+</section>
+
+<!-- ============ Feature 1 ============ -->
+<section class="feature">
+  <div class="feature-inner">
+    <div class="feature-copy">
+      <h2>Simplify Your Gadget<br>Repair Operations</h2>
+      <p>From booking to completed repairs, RepairSync AI helps gadget repair shops manage their daily work, assist technicians, and keep customers updated.</p>
+
+      <ul class="feature-list">
+        <li>
+          <span class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="6" width="12" height="15" rx="2" stroke="#4D5B63" stroke-width="1.5"/><circle cx="18" cy="17" r="4" stroke="#4D5B63" stroke-width="1.5"/><path d="M16.3 17l1.2 1.2 2.2-2.2" stroke="#4D5B63" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <div>
+            <strong>Track repairs easily.</strong>
+            <span>Manage every device from intake to release.</span>
+          </div>
+        </li>
+        <li>
+          <span class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#4D5B63" stroke-width="1.5"/><path d="M3 9h18" stroke="#4D5B63" stroke-width="1.5"/><path d="M6.5 14h3" stroke="#4D5B63" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </span>
+          <div>
+            <strong>Accept online bookings.</strong>
+            <span>Let customers submit device details and symptoms.</span>
+          </div>
+        </li>
+        <li>
+          <span class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10.5" cy="10.5" r="6" stroke="#4D5B63" stroke-width="1.5"/><path d="M15 15l5 5" stroke="#4D5B63" stroke-width="1.5" stroke-linecap="round"/><path d="M10.5 8v5M8 10.5h5" stroke="#4D5B63" stroke-width="1.3" stroke-linecap="round"/></svg>
+          </span>
+          <div>
+            <strong>Get AI-assisted diagnostics.</strong>
+            <span>Help technicians and customers identify possible device problems.</span>
+          </div>
+        </li>
+        <li>
+          <span class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4" width="18" height="16" rx="2" stroke="#4D5B63" stroke-width="1.5"/><path d="M8 9h8M8 13h5" stroke="#4D5B63" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </span>
+          <div>
+            <strong>Manage your workflow.</strong>
+            <span>Assign tasks, monitor progress, and organize repair records.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="feature-art">
+      <!-- Isometric illustration 1: booth / dashboard -->
+      <svg viewBox="0 0 440 340" xmlns="http://www.w3.org/2000/svg">
+        <!-- base platform -->
+        <polygon points="40,255 220,190 400,255 220,320" fill="#EAF4E4"/>
+        <polygon points="40,235 220,170 400,235 220,300" fill="#DDEED4"/>
+        <!-- booth pedestal -->
+        <polygon points="150,190 220,165 290,190 220,215" fill="#B7D9A8"/>
+        <polygon points="150,190 150,235 220,260 220,215" fill="#9FCB8B"/>
+        <polygon points="290,190 290,235 220,260 220,215" fill="#89BE72"/>
+        <!-- left panel -->
+        <g transform="translate(60,70)">
+          <rect x="0" y="0" width="110" height="130" rx="10" fill="#EAF4E4" stroke="#CFE6C4"/>
+          <circle cx="24" cy="28" r="9" fill="#A7CF96"/>
+          <rect x="42" y="20" width="52" height="6" rx="3" fill="#B7D9A8"/>
+          <rect x="42" y="32" width="36" height="6" rx="3" fill="#D6EACC"/>
+          <rect x="16" y="55" width="78" height="6" rx="3" fill="#D6EACC"/>
+          <rect x="16" y="70" width="78" height="6" rx="3" fill="#D6EACC"/>
+          <rect x="16" y="85" width="50" height="6" rx="3" fill="#D6EACC"/>
+          <circle cx="88" cy="108" r="10" fill="#8BBF78"/>
+          <path d="M84 108l3 3 6-6" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <!-- right panel -->
+        <g transform="translate(255,45)">
+          <rect x="0" y="0" width="140" height="165" rx="10" fill="#EAF4E4" stroke="#CFE6C4"/>
+          <rect x="16" y="18" width="70" height="6" rx="3" fill="#B7D9A8"/>
+          <rect x="16" y="32" width="108" height="6" rx="3" fill="#D6EACC"/>
+          <rect x="16" y="46" width="108" height="6" rx="3" fill="#D6EACC"/>
+          <rect x="16" y="60" width="80" height="6" rx="3" fill="#D6EACC"/>
+          <polyline points="16,135 40,110 60,122 82,90 108,100 124,72" fill="none" stroke="#8BBF78" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="16" y="140" width="14" height="16" fill="#CFE6C4"/>
+          <rect x="36" y="132" width="14" height="24" fill="#B7D9A8"/>
+          <rect x="56" y="120" width="14" height="36" fill="#8BBF78"/>
+          <rect x="76" y="128" width="14" height="28" fill="#B7D9A8"/>
+        </g>
+        <!-- mascot phone -->
+        <g transform="translate(178,150)">
+          <rect x="0" y="0" width="60" height="95" rx="14" fill="#EAF4E4" stroke="#CFE6C4" stroke-width="2"/>
+          <circle cx="20" cy="40" r="4" fill="#4D5B63"/>
+          <circle cx="40" cy="40" r="4" fill="#4D5B63"/>
+          <path d="M18 55q12 10 24 0" stroke="#4D5B63" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <path d="M-6 70l20-12" stroke="#8BBF78" stroke-width="5" stroke-linecap="round"/>
+          <path d="M66 70l-20-12" stroke="#8BBF78" stroke-width="5" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Feature 2 ============ -->
+<section class="feature reverse">
+  <div class="feature-inner">
+    <div class="feature-art">
+      <!-- Isometric illustration 2: stacked cards + chart -->
+      <svg viewBox="0 0 440 340" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="30,250 220,185 410,250 220,315" fill="#EAF4E4"/>
+        <polygon points="30,230 220,165 410,230 220,295" fill="#DDEED4"/>
+
+        <!-- bars back -->
+        <g transform="translate(30,60)">
+          <rect x="0" y="80" width="24" height="80" fill="#CFE6C4"/>
+          <rect x="30" y="55" width="24" height="105" fill="#B7D9A8"/>
+          <rect x="60" y="25" width="24" height="135" fill="#8BBF78"/>
+        </g>
+
+        <!-- folder card -->
+        <g transform="translate(210,70)">
+          <rect x="0" y="0" width="110" height="120" rx="10" fill="#DDEED4" stroke="#CFE6C4"/>
+          <circle cx="20" cy="24" r="7" fill="#8BBF78"/>
+          <rect x="34" y="19" width="60" height="6" rx="3" fill="#B7D9A8"/>
+          <rect x="16" y="45" width="78" height="6" rx="3" fill="#CFE6C4"/>
+          <rect x="16" y="58" width="60" height="6" rx="3" fill="#CFE6C4"/>
+          <rect x="16" y="90" width="30" height="30" rx="4" fill="#B7D9A8"/>
+        </g>
+
+        <!-- customer card front-left -->
+        <g transform="translate(90,140)">
+          <rect x="0" y="0" width="130" height="120" rx="10" fill="#F4FAF1" stroke="#CFE6C4"/>
+          <circle cx="22" cy="26" r="9" fill="#8BBF78"/>
+          <rect x="40" y="20" width="70" height="6" rx="3" fill="#B7D9A8"/>
+          <path d="M16 55l16 10 16-14 16 10 16-18 16 12" stroke="#8BBF78" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="20" cy="95" r="9" fill="#DDEED4"/>
+          <path d="M14 96l4 4 8-9" stroke="#8BBF78" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="40" y="90" width="70" height="6" rx="3" fill="#DDEED4"/>
+        </g>
+
+        <!-- shop / analytics card front-right -->
+        <g transform="translate(220,175)">
+          <rect x="0" y="0" width="130" height="105" rx="10" fill="#EAF4E4" stroke="#CFE6C4"/>
+          <path d="M20 55l10-14h20l10 14z" fill="#B7D9A8"/>
+          <rect x="24" y="55" width="22" height="20" fill="#8BBF78"/>
+          <circle cx="70" cy="30" r="8" fill="#8BBF78"/>
+          <circle cx="86" cy="30" r="8" fill="#B7D9A8"/>
+          <circle cx="102" cy="30" r="8" fill="#CFE6C4"/>
+          <polyline points="18,90 40,75 58,85 80,65 100,72 116,55" fill="none" stroke="#8BBF78" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+
+        <!-- bell notification -->
+        <circle cx="88" cy="120" r="16" fill="#4D5B63"/>
+        <path d="M83 122v-6a5 5 0 0110 0v6l2 3h-14z" fill="#fff"/>
+        <circle cx="88" cy="128" r="1.6" fill="#fff"/>
+
+        <!-- lock -->
+        <circle cx="352" cy="145" r="16" fill="#4D5B63"/>
+        <rect x="345" y="143" width="14" height="10" rx="2" fill="#fff"/>
+        <path d="M348 143v-4a4 4 0 018 0v4" stroke="#fff" stroke-width="2" fill="none"/>
+      </svg>
+    </div>
+
+    <div class="feature-copy">
+      <h2>Keep Repairs Organized</h2>
+      <p>Give customers better visibility while keeping your repair shop connected from intake to completion.</p>
+
+      <ul class="feature-list">
+        <li>
+          <span class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3a6 6 0 00-6 6v3.2c0 .5-.2 1-.5 1.4L4 16h16l-1.5-2.4c-.3-.4-.5-.9-.5-1.4V9a6 6 0 00-6-6z" stroke="#4D5B63" stroke-width="1.5" stroke-linejoin="round"/><path d="M9.5 19a2.5 2.5 0 005 0" stroke="#4D5B63" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </span>
+          <div>
+            <strong>Keep customers updated.</strong>
+            <span>Let customers check their device's repair status and progress.</span>
+          </div>
+        </li>
+        <li>
+          <span class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 8l9-4 9 4-9 4-9-4z" stroke="#4D5B63" stroke-width="1.5" stroke-linejoin="round"/><path d="M3 8v8l9 4 9-4V8" stroke="#4D5B63" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </span>
+          <div>
+            <strong>Keep repair records organized.</strong>
+            <span>Store customer details, device information, diagnostic findings, and repair history in one place.</span>
+          </div>
+        </li>
+        <li>
+          <span class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4" width="18" height="12" rx="2" stroke="#4D5B63" stroke-width="1.5"/><path d="M8 20h8M12 16v4" stroke="#4D5B63" stroke-width="1.5" stroke-linecap="round"/><path d="M7 10l3 3 6-6" stroke="#4D5B63" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <div>
+            <strong>Monitor your shop.</strong>
+            <span>Track repair activity and manage staff access based on their roles.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>

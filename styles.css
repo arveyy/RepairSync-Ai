@@ -1,0 +1,380 @@
+/* ============================================
+   RepairSync AI — Landing Page Styles
+   ============================================ */
+
+:root {
+  --green: #A7CF96;
+  --green-dark: #8BBF78;
+  --green-pale: #EAF4E4;
+  --green-paler: #F4FAF1;
+  --ink: #4D5B63;
+  --ink-soft: #636F76;
+  --text-body: #7C8A90;
+  --white: #FFFFFF;
+  --nav-height: 64px;
+  --container: 1140px;
+  --radius-full: 999px;
+  --radius-lg: 20px;
+  --shadow-nav: 0 8px 24px rgba(77, 91, 99, 0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-body);
+  background: var(--white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .brand-name {
+  font-family: 'Poppins', 'Inter', sans-serif;
+  font-weight: 700;
+  color: var(--ink-soft);
+  line-height: 1.25;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ============ Floating Nav ============ */
+
+.nav-spacer {
+  height: calc(var(--nav-height) + 40px);
+}
+
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  max-width: 1000px;
+  height: var(--nav-height);
+  background: var(--green);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-nav);
+  z-index: 1000;
+  transition: box-shadow 0.25s ease, top 0.25s ease;
+}
+
+.navbar.is-scrolled {
+  box-shadow: 0 10px 30px rgba(77, 91, 99, 0.22);
+  top: 14px;
+}
+
+.nav-inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 18px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.brand-mark svg {
+  width: 20px;
+  height: 20px;
+}
+
+.brand-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--ink);
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 9px 20px;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  border: none;
+  transition: transform 0.15s ease, background 0.2s ease, box-shadow 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--ink);
+  border: 1.5px solid var(--ink);
+}
+
+.btn-outline:hover {
+  background: rgba(77, 91, 99, 0.08);
+}
+
+.btn-dark {
+  background: var(--ink);
+  color: var(--white);
+}
+
+.btn-dark:hover {
+  background: #3c484e;
+  box-shadow: 0 6px 16px rgba(77, 91, 99, 0.35);
+}
+
+.nav-toggle {
+  display: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--white);
+  border: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav-toggle span,
+.nav-toggle span::before,
+.nav-toggle span::after {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 2px;
+  background: var(--ink);
+  position: relative;
+  transition: 0.2s ease;
+}
+
+.nav-toggle span::before { position: absolute; top: -5px; }
+.nav-toggle span::after { position: absolute; top: 5px; }
+
+/* ============ Hero ============ */
+
+.hero {
+  text-align: center;
+  padding: 90px 24px 60px;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 46px;
+  letter-spacing: -0.5px;
+  margin-bottom: 22px;
+}
+
+.hero h1 .accent {
+  color: var(--green);
+}
+
+.hero p {
+  font-size: 16.5px;
+  color: var(--text-body);
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+/* ============ Feature Sections ============ */
+
+.feature {
+  padding: 70px 24px;
+}
+
+.feature-inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.feature.reverse .feature-inner {
+  grid-template-columns: 1fr 1fr;
+}
+
+.feature.reverse .feature-copy {
+  order: 2;
+}
+
+.feature.reverse .feature-art {
+  order: 1;
+}
+
+.feature-copy h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.feature-copy > p {
+  font-size: 15.5px;
+  margin-bottom: 28px;
+  max-width: 460px;
+}
+
+.feature-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-list li {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.feature-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--green-pale);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.feature-list strong {
+  color: var(--ink-soft);
+  font-weight: 600;
+  font-size: 14.5px;
+}
+
+.feature-list span {
+  display: block;
+  font-size: 14px;
+  color: var(--text-body);
+  margin-top: 2px;
+}
+
+.feature-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-art svg {
+  width: 100%;
+  height: auto;
+  max-width: 440px;
+}
+
+/* ============ Footer ============ */
+
+.footer {
+  text-align: center;
+  padding: 40px 24px 60px;
+  font-size: 13.5px;
+  color: var(--text-body);
+}
+
+/* ============ Responsive ============ */
+
+@media (max-width: 860px) {
+  .nav-links { display: none; }
+  .nav-toggle { display: flex; }
+  .btn-outline { display: none; }
+
+  .feature-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .feature.reverse .feature-copy,
+  .feature.reverse .feature-art {
+    order: initial;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    width: calc(100% - 24px);
+  }
+  .nav-actions .btn-dark {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+  .hero {
+    padding-top: 70px;
+  }
+  .hero h1 {
+    font-size: 28px;
+  }
+}

@@ -216,6 +216,237 @@ img {
 .nav-toggle span::before { position: absolute; top: -5px; }
 .nav-toggle span::after { position: absolute; top: 5px; }
 
+/* ============ Floating Sign In Panel ============ */
+
+.signin-backdrop {
+  position: fixed;
+  inset: 0;
+  background: transparent;
+  z-index: 1100;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.signin-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.signin-panel {
+  position: fixed;
+  top: 110px;
+  right: 6%;
+  width: 380px;
+  max-width: calc(100% - 32px);
+  max-height: calc(100vh - 140px);
+  overflow-y: auto;
+  background: rgba(167, 207, 150, 0.38);
+  backdrop-filter: blur(28px) saturate(160%);
+  -webkit-backdrop-filter: blur(28px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 28px;
+  padding: 36px 32px 30px;
+  box-shadow: 0 24px 60px rgba(77, 91, 99, 0.28);
+  z-index: 1200;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-18px) scale(0.96);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+.signin-panel.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.signin-close {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--ink);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.signin-close:hover {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.signin-logo {
+  width: 84px;
+  height: 84px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(77, 91, 99, 0.18);
+  overflow: hidden;
+}
+
+.signin-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.signin-panel h3 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  margin-bottom: 22px;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signin-form label {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--ink-soft);
+  margin-bottom: 6px;
+}
+
+.signin-form input[type="email"],
+.signin-form input[type="password"],
+.signin-form input[type="text"] {
+  width: 100%;
+  padding: 11px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.85);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: var(--ink);
+  margin-bottom: 16px;
+  outline: none;
+  transition: border 0.2s ease, background 0.2s ease;
+}
+
+.signin-form input::placeholder {
+  color: #A9B2B6;
+}
+
+.signin-form input:focus {
+  border-color: var(--green-dark);
+  background: var(--white);
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field input {
+  padding-right: 42px;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 11px;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.password-toggle svg {
+  width: 100%;
+  height: 100%;
+}
+
+.forgot-link {
+  align-self: flex-end;
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin-top: -8px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.btn-signin {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: var(--ink);
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 18px;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.btn-signin:hover {
+  background: #3c484e;
+  transform: translateY(-1px);
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  margin-bottom: 18px;
+  cursor: pointer;
+}
+
+.remember-me input {
+  width: 15px;
+  height: 15px;
+  accent-color: var(--ink);
+  cursor: pointer;
+}
+
+.signup-prompt {
+  text-align: center;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+}
+
+.signup-prompt a {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+@media (max-width: 640px) {
+  .signin-panel {
+    top: 90px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%) translateY(-18px) scale(0.96);
+    width: calc(100% - 32px);
+  }
+
+  .signin-panel.active {
+    transform: translateX(-50%) translateY(0) scale(1);
+  }
+}
+
 /* ============ Hero ============ */
 
 .hero {

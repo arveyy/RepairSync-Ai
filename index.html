@@ -29,7 +29,7 @@
     </ul>
 
     <div class="nav-actions">
-      <a href="#signin" class="btn btn-outline">Sign In</a>
+      <a href="#signin" class="btn btn-outline" id="signInTrigger">Sign In</a>
       <a href="#signup" class="btn btn-dark">Sign Up</a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span></button>
     </div>
@@ -37,6 +37,46 @@
 </nav>
 
 <div class="nav-spacer"></div>
+
+<!-- ============ Floating Sign In Panel ============ -->
+<div class="signin-backdrop" id="signinBackdrop"></div>
+
+<div class="signin-panel" id="signinPanel" role="dialog" aria-modal="true" aria-labelledby="signinTitle">
+  <button class="signin-close" id="signinClose" aria-label="Close sign in">&times;</button>
+
+  <div class="signin-logo">
+    <img src="Images/Logo.png" alt="RepairSync logo">
+  </div>
+
+  <h3 id="signinTitle">Sign in to your account to continue</h3>
+
+  <form class="signin-form" id="signinForm">
+    <label for="signinEmail">Email</label>
+    <input type="email" id="signinEmail" placeholder="username@gmail.com" autocomplete="email" required>
+
+    <label for="signinPassword">Password</label>
+    <div class="password-field">
+      <input type="password" id="signinPassword" placeholder="Password" autocomplete="current-password" required>
+      <button type="button" class="password-toggle" id="passwordToggle" aria-label="Show password">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.5 12S5 5 12 5s10.5 7 10.5 7-3.5 7-10.5 7S1.5 12 1.5 12z" stroke="#7C8A90" stroke-width="1.5" stroke-linejoin="round"/>
+          <circle cx="12" cy="12" r="3" stroke="#7C8A90" stroke-width="1.5"/>
+        </svg>
+      </button>
+    </div>
+
+    <a href="#" class="forgot-link">Forgot Password?</a>
+
+    <button type="submit" class="btn-signin">Sign in</button>
+
+    <label class="remember-me">
+      <input type="checkbox" id="rememberMe">
+      <span>Remember me</span>
+    </label>
+
+    <p class="signup-prompt">Don't have an account yet? <a href="#signup">Sign Up</a></p>
+  </form>
+</div>
 
 <!-- ============ Hero ============ -->
 <section class="hero">
@@ -140,7 +180,6 @@
     </div>
   </div>
 </section>
-
 
 <script src="script.js"></script>
 </body>

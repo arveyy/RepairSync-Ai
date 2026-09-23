@@ -30,7 +30,7 @@
 
     <div class="nav-actions">
       <a href="#signin" class="btn btn-outline" id="signInTrigger">Sign In</a>
-      <a href="#signup" class="btn btn-dark">Sign Up</a>
+      <a href="#signup" class="btn btn-dark" id="signUpTrigger">Sign Up</a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span></button>
     </div>
   </div>
@@ -74,7 +74,57 @@
       <span>Remember me</span>
     </label>
 
-    <p class="signup-prompt">Don't have an account yet? <a href="#signup">Sign Up</a></p>
+    <p class="signup-prompt">Don't have an account yet? <a href="#signup" id="switchToSignup">Sign Up</a></p>
+  </form>
+</div>
+
+<!-- ============ Floating Sign Up Panel ============ -->
+<div class="signup-backdrop" id="signupBackdrop"></div>
+
+<div class="signup-panel" id="signupPanel" role="dialog" aria-modal="true" aria-labelledby="signupTitle">
+  <button class="signin-close" id="signupClose" aria-label="Close sign up">&times;</button>
+
+  <div class="signin-logo">
+    <img src="Images/Logo.png" alt="RepairSync logo">
+  </div>
+
+  <h3 id="signupTitle">Create your account</h3>
+  <p class="signup-subtext">Start your 30-day free trial. No credit card required.</p>
+
+  <form class="signin-form signup-form" id="signupForm">
+    <div class="name-row">
+      <div class="name-field">
+        <label for="signupFirstName">First name <span class="required">*</span></label>
+        <input type="text" id="signupFirstName" placeholder="John" autocomplete="given-name" required>
+      </div>
+      <div class="name-field">
+        <label for="signupLastName">Last name <span class="required">*</span></label>
+        <input type="text" id="signupLastName" placeholder="Doe" autocomplete="family-name" required>
+      </div>
+    </div>
+
+    <label for="signupEmail">Email <span class="required">*</span></label>
+    <input type="email" id="signupEmail" placeholder="you@example.com" autocomplete="email" required>
+
+    <label for="signupPassword">Password <span class="required">*</span></label>
+    <div class="password-field">
+      <input type="password" id="signupPassword" placeholder="At least 8 characters" autocomplete="new-password" minlength="8" required>
+      <button type="button" class="password-toggle" id="signupPasswordToggle" aria-label="Show password">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.5 12S5 5 12 5s10.5 7 10.5 7-3.5 7-10.5 7S1.5 12 1.5 12z" stroke="#7C8A90" stroke-width="1.5" stroke-linejoin="round"/>
+          <circle cx="12" cy="12" r="3" stroke="#7C8A90" stroke-width="1.5"/>
+        </svg>
+      </button>
+    </div>
+
+    <label class="terms-check">
+      <input type="checkbox" id="agreeTerms" required>
+      <span>I agree to the <a href="#tos">Terms of Service</a> and <a href="#privacy">Privacy Policy</a></span>
+    </label>
+
+    <button type="submit" class="btn-signin">Create account</button>
+
+    <p class="signup-prompt">Already have an account? <a href="#signin" id="switchToSignin">Sign in</a></p>
   </form>
 </div>
 
@@ -180,6 +230,10 @@
     </div>
   </div>
 </section>
+
+<footer class="footer">
+  &copy; 2026 RepairSync AI. All rights reserved.
+</footer>
 
 <script src="script.js"></script>
 </body>

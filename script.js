@@ -78,4 +78,74 @@ document.addEventListener('DOMContentLoaded', () => {
       // Hook up real authentication here.
     });
   }
+
+  // ============ Floating Sign Up Panel ============
+  const signUpTrigger = document.getElementById('signUpTrigger');
+  const signupPanel = document.getElementById('signupPanel');
+  const signupBackdrop = document.getElementById('signupBackdrop');
+  const signupClose = document.getElementById('signupClose');
+  const signupPasswordToggle = document.getElementById('signupPasswordToggle');
+  const signupPassword = document.getElementById('signupPassword');
+  const signupForm = document.getElementById('signupForm');
+  const switchToSignup = document.getElementById('switchToSignup');
+  const switchToSignin = document.getElementById('switchToSignin');
+
+  const openSignup = (e) => {
+    if (e) e.preventDefault();
+    signupPanel.classList.add('active');
+    signupBackdrop.classList.add('active');
+    setTimeout(() => {
+      const firstNameField = document.getElementById('signupFirstName');
+      if (firstNameField) firstNameField.focus();
+    }, 250);
+  };
+
+  const closeSignup = () => {
+    signupPanel.classList.remove('active');
+    signupBackdrop.classList.remove('active');
+  };
+
+  if (signUpTrigger) signUpTrigger.addEventListener('click', openSignup);
+  if (signupClose) signupClose.addEventListener('click', closeSignup);
+  if (signupBackdrop) signupBackdrop.addEventListener('click', closeSignup);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && signupPanel.classList.contains('active')) {
+      closeSignup();
+    }
+  });
+
+  // Show / hide password (Sign Up form)
+  if (signupPasswordToggle && signupPassword) {
+    signupPasswordToggle.addEventListener('click', () => {
+      const isHidden = signupPassword.type === 'password';
+      signupPassword.type = isHidden ? 'text' : 'password';
+      signupPasswordToggle.setAttribute('aria-label', isHidden ? 'Hide password' : 'Show password');
+    });
+  }
+
+  // Prevent an actual page submit for this demo form
+  if (signupForm) {
+    signupForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      // Hook up real account-creation logic here.
+    });
+  }
+
+  // Swap between the two panels without closing-then-reopening awkwardly
+  if (switchToSignup) {
+    switchToSignup.addEventListener('click', (e) => {
+      e.preventDefault();
+      closeSignin();
+      openSignup();
+    });
+  }
+
+  if (switchToSignin) {
+    switchToSignin.addEventListener('click', (e) => {
+      e.preventDefault();
+      closeSignup();
+      openSignin();
+    });
+  }
 });

@@ -259,7 +259,7 @@ img {
   background: rgba(167, 207, 150, 0.38);
   backdrop-filter: blur(28px) saturate(160%);
   -webkit-backdrop-filter: blur(28px) saturate(160%);
-  border: 1px solid rgba(255, 255, 255, 0.55);
+  border: 2px solid #A7CF96;
   border-radius: 28px;
   padding: 44px 44px 38px;
   box-shadow: 0 24px 60px rgba(77, 91, 99, 0.28);
@@ -483,7 +483,7 @@ img {
   background: rgba(167, 207, 150, 0.38);
   backdrop-filter: blur(28px) saturate(160%);
   -webkit-backdrop-filter: blur(28px) saturate(160%);
-  border: 1px solid rgba(255, 255, 255, 0.55);
+  border: 2px solid #A7CF96;
   border-radius: 28px;
   padding: 44px 44px 38px;
   box-shadow: 0 24px 60px rgba(77, 91, 99, 0.28);

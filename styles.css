@@ -118,8 +118,8 @@ img {
 }
 
 .brand-mark img {
-  width: 100%;
-  height: 100%;
+  width: 118%;
+  height: 118%;
   object-fit: contain;
 }
 
@@ -250,30 +250,30 @@ img {
 
 .signin-panel {
   position: fixed;
-  top: 110px;
-  right: 6%;
-  width: 380px;
+  top: 50%;
+  left: 50%;
+  width: 480px;
   max-width: calc(100% - 32px);
-  max-height: calc(100vh - 140px);
+  max-height: calc(100vh - 64px);
   overflow-y: auto;
   background: rgba(167, 207, 150, 0.38);
   backdrop-filter: blur(28px) saturate(160%);
   -webkit-backdrop-filter: blur(28px) saturate(160%);
   border: 1px solid rgba(255, 255, 255, 0.55);
   border-radius: 28px;
-  padding: 36px 32px 30px;
+  padding: 44px 44px 38px;
   box-shadow: 0 24px 60px rgba(77, 91, 99, 0.28);
   z-index: 1200;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-18px) scale(0.96);
+  transform: translate(-50%, -50%) scale(0.96);
   transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
 }
 
 .signin-panel.active {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0) scale(1);
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .signin-close {
@@ -300,9 +300,9 @@ img {
 }
 
 .signin-logo {
-  width: 84px;
-  height: 84px;
-  margin: 0 auto 20px;
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 22px;
   border-radius: 50%;
   background: var(--white);
   display: flex;
@@ -321,7 +321,7 @@ img {
 .signin-panel h3,
 .signup-panel h3 {
   text-align: center;
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 600;
   color: var(--ink-soft);
   margin-bottom: 22px;
@@ -333,7 +333,7 @@ img {
 }
 
 .signin-form label {
-  font-size: 13.5px;
+  font-size: 14.5px;
   font-weight: 500;
   color: var(--ink-soft);
   margin-bottom: 6px;
@@ -343,14 +343,14 @@ img {
 .signin-form input[type="password"],
 .signin-form input[type="text"] {
   width: 100%;
-  padding: 11px 14px;
-  border-radius: 10px;
+  padding: 13px 16px;
+  border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.8);
   background: rgba(255, 255, 255, 0.85);
   font-family: 'Inter', sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   color: var(--ink);
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   outline: none;
   transition: border 0.2s ease, background 0.2s ease;
 }
@@ -374,7 +374,7 @@ img {
 
 .password-toggle {
   position: absolute;
-  top: 11px;
+  top: 13px;
   right: 12px;
   width: 20px;
   height: 20px;
@@ -403,13 +403,13 @@ img {
 
 .btn-signin {
   width: 100%;
-  padding: 12px;
-  border-radius: 12px;
+  padding: 14px;
+  border-radius: 14px;
   border: none;
   background: var(--ink);
   color: var(--white);
   font-family: 'Inter', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   margin-bottom: 18px;
@@ -451,15 +451,7 @@ img {
 
 @media (max-width: 640px) {
   .signin-panel {
-    top: 90px;
-    left: 50%;
-    right: auto;
-    transform: translateX(-50%) translateY(-18px) scale(0.96);
-    width: calc(100% - 32px);
-  }
-
-  .signin-panel.active {
-    transform: translateX(-50%) translateY(0) scale(1);
+    padding: 34px 26px 28px;
   }
 }
 
@@ -516,35 +508,6 @@ img {
   margin-bottom: 26px;
 }
 
-.signup-panel .signin-logo {
-  width: 96px;
-  height: 96px;
-  margin-bottom: 22px;
-}
-
-.signup-panel h3 {
-  font-size: 19px;
-}
-
-.signup-panel .signin-form label {
-  font-size: 14.5px;
-}
-
-.signup-panel .signin-form input[type="email"],
-.signup-panel .signin-form input[type="password"],
-.signup-panel .signin-form input[type="text"] {
-  padding: 13px 16px;
-  font-size: 15px;
-  border-radius: 12px;
-  margin-bottom: 18px;
-}
-
-.signup-panel .btn-signin {
-  padding: 14px;
-  font-size: 16px;
-  border-radius: 14px;
-}
-
 .required {
   color: #E0645C;
 }
@@ -557,10 +520,6 @@ img {
 
 .name-field label {
   display: block;
-}
-
-.signup-panel .password-toggle {
-  top: 13px;
 }
 
 .terms-check {

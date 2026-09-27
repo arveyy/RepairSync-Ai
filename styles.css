@@ -16,6 +16,17 @@
   --radius-full: 999px;
   --radius-lg: 20px;
   --shadow-nav: 0 8px 24px rgba(77, 91, 99, 0.12);
+
+  /* Page-level tokens only — nav bar, logo, and the glass Sign In / Sign
+     Up panels stay green in both themes and are NOT driven by these. */
+  --page-bg: var(--white);
+  --page-heading: var(--ink-soft);
+}
+
+html.dark-mode {
+  --page-bg: #071102;
+  --page-heading: #E7F3DE;
+  --text-body: #92AC96;
 }
 
 * {
@@ -31,16 +42,18 @@ html {
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   color: var(--text-body);
-  background: var(--white);
+  background: var(--page-bg);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3, .brand-name {
   font-family: 'Poppins', 'Inter', sans-serif;
   font-weight: 700;
-  color: var(--ink-soft);
+  color: var(--page-heading);
   line-height: 1.25;
+  transition: color 0.3s ease;
 }
 
 a {
@@ -163,6 +176,44 @@ img {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.theme-toggle {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background: rgba(77, 91, 99, 0.1);
+  transform: translateY(-1px);
+}
+
+.theme-toggle img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.theme-icon-dark {
+  display: none;
+}
+
+html.dark-mode .theme-icon-light {
+  display: none;
+}
+
+html.dark-mode .theme-icon-dark {
+  display: block;
 }
 
 .btn {
@@ -659,7 +710,7 @@ img {
 }
 
 .feature-list strong {
-  color: var(--ink-soft);
+  color: var(--page-heading);
   font-weight: 600;
   font-size: 14.5px;
 }

@@ -8,6 +8,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script>
+  // Apply the saved (or system) theme immediately, before the page paints,
+  // so there's no flash of the wrong theme on load.
+  (function () {
+    try {
+      var saved = localStorage.getItem('repairsync-theme');
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (saved === 'dark' || (!saved && prefersDark)) {
+        document.documentElement.classList.add('dark-mode');
+      }
+    } catch (e) {}
+  })();
+</script>
 </head>
 <body>
 
@@ -29,6 +42,10 @@
     </ul>
 
     <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode">
+        <img src="Images/lightmodelogo.png" alt="" class="theme-icon-light">
+        <img src="Images/darkmodelogo.png" alt="" class="theme-icon-dark">
+      </button>
       <a href="#signin" class="btn btn-outline" id="signInTrigger">Sign In</a>
       <a href="#signup" class="btn btn-dark" id="signUpTrigger">Sign Up</a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span></button>

@@ -27,6 +27,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ============ Dark Mode / Light Mode Toggle ============
+  const themeToggle = document.getElementById('themeToggle');
+
+  const setToggleLabel = () => {
+    if (!themeToggle) return;
+    const isDark = document.documentElement.classList.contains('dark-mode');
+    themeToggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+  };
+
+  setToggleLabel(); // reflect whatever the inline head script already applied
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark-mode');
+      try {
+        localStorage.setItem(
+          'repairsync-theme',
+          document.documentElement.classList.contains('dark-mode') ? 'dark' : 'light'
+        );
+      } catch (e) {}
+      setToggleLabel();
+    });
+  }
+
   // ============ Floating Sign In Panel ============
   const signInTrigger = document.getElementById('signInTrigger');
   const signinPanel = document.getElementById('signinPanel');

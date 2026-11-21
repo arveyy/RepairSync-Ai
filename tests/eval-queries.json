@@ -1,0 +1,290 @@
+[
+ {
+  "device_type": "smartphone",
+  "brand": "Apple",
+  "query": "I dropped my phone on the pavement and now the glass is all cracked",
+  "expected": "Cracked or damaged display assembly"
+ },
+ {
+  "device_type": "smartphone",
+  "brand": "Samsung",
+  "query": "basag screen ko after mahulog sa motor, may lines na rin",
+  "expected": "Cracked or damaged display assembly"
+ },
+ {
+  "device_type": "tablet",
+  "brand": "Apple",
+  "query": "my kid dropped the ipad and the screen shattered",
+  "expected": "Cracked or damaged display assembly"
+ },
+ {
+  "device_type": "smartphone",
+  "brand": "Xiaomi",
+  "query": "a bright green vertical line appeared on my display out of nowhere, never dropped it",
+  "expected": "Faulty display (no physical damage) / flex or panel failure"
+ },
+ {
+  "device_type": "smartphone",
+  "brand": "Oppo",
+  "query": "screen is flickering with purple lines but the phone has never been dropped",
+  "expected": "Faulty display (no physical damage) / flex or panel failure"
+ },
+ {
+  "device_type": "smartphone",
+  "brand": "Apple",
+  "query": "battery percentage falls so quickly, from 60 to 15 in minutes and sometimes it just turns off",
+  "expected": "Battery degradation / failing battery"
+ },
+ {
+  "device_type": "smartphone",
+  "brand": "Samsung",
+  "query": "after 3 years the battery life is terrible, need to charge it three times a day",
+  "expected": "Battery degradation / failing battery"
+ },
+ {
+  "device_type": "tablet",
+  "brand": "Samsung",
+  "query": "the tablet battery dies very quickly even when not in use",
+  "expected": "Battery degradation / failing battery"
+ },
+ {
+  "device_type": "laptop",
+  "brand": "Dell",
+  "query": "the laptop base is bulging and the touchpad is lifting up, I think the battery is puffed",
+  "expected": "Swollen battery (safety hazard)"
+ },
+ {
+  "device_type": "smartphone",
+  "brand": "Oppo",
+  "query": "phone back panel is popping open and the display is being pushed out",
+  "expected": "Swollen battery (safety hazard)"
+ },
+ {
+  "device_type": "smartphone",
+  "brand": "Apple",
+  "query": "charger only works if I hold the plug at a certain angle",
+  "expected": "Faulty charging port (dirty, loose or damaged)"
+ },
+ {
+  "device_type": "smartphone",
+  "brand": "Realme",
+  "query": "ayaw mag-charge unless i-press ang cable, parang maluwag ang port",
+  "expected": "Faulty charging port (dirty, loose or damaged)"
+ },
+ {
+  "device_type": "smartphone",
+  "brand": "Samsung",
+  "query": "my phone fell into a pool, wont work right now and has moisture warning",
+  "expected": "Liquid / water damage"
+ },
+ {
+  "device_type": "laptop",
+  "brand": "Acer",
+  "query": "spilled juice on my laptop keyboard and it shut down",
+  "expected": "Liquid / water damage"
+ },
+ {
+  "device_type": "smartphone",
+  "brand": "Huawei",
+  "query": "nalubog sa tubig ang phone, ayaw na mag-on",
+  "expected": "Liquid / water damage"
+ },
+ {
+  "device_type": "smartphone",
+  "brand": "Samsung",
+  "query": "phone is stuck in a restart loop on the samsung logo after the latest update",
+  "expected": "Software / operating system corruption (boot loop)"
+ },
+ {
+  "device_type": "tablet",
+  "brand": "Apple",
+  "query": "ipad keeps rebooting at the apple logo after updating",
+  "expected": "Software / operating system corruption (boot loop)"
+ },
+ {
+  "device_type": "smartphone",
+  "brand": "Apple",
+  "query": "the screen has a dead area on the right and it taps things on its own",
+  "expected": "Touch digitizer / touch controller fault"
+ },
+ {
+  "device_type": "tablet",
+  "brand": "Lenovo",
+  "query": "the touchscreen is not responding in some parts and it opens apps by itself",
+  "expected": "Touch digitizer / touch controller fault"
+ },
+ {
+  "device_type": "smartphone",
+  "brand": "Samsung",
+  "query": "i cannot hear anything from the loudspeaker and ringtone is silent",
+  "expected": "Speaker or earpiece fault"
+ },
+ {
+  "device_type": "smartphone",
+  "brand": "Xiaomi",
+  "query": "during calls the other person says they cant hear me",
+  "expected": "Microphone fault"
+ },
+ {
+  "device_type": "smartphone",
+  "brand": "Oppo",
+  "query": "my voice isnt picked up on calls or voice notes",
+  "expected": "Microphone fault"
+ },
+ {
+  "device_type": "smartphone",
+  "brand": "Apple",
+  "query": "photos are all blurry and the camera app shows a black screen at times",
+  "expected": "Camera module fault"
+ },
+ {
+  "device_type": "smartphone",
+  "brand": "Samsung",
+  "query": "back camera wont focus and there is a dark spot in every photo",
+  "expected": "Camera module fault"
+ },
+ {
+  "device_type": "laptop",
+  "brand": "Lenovo",
+  "query": "laptop doesnt show any wifi networks, wireless adapter missing in settings",
+  "expected": "Wi-Fi / Bluetooth antenna or module fault"
+ },
+ {
+  "device_type": "smartphone",
+  "brand": "Samsung",
+  "query": "wifi keeps dropping and bluetooth wont connect",
+  "expected": "Wi-Fi / Bluetooth antenna or module fault"
+ },
+ {
+  "device_type": "smartphone",
+  "brand": "Apple",
+  "query": "it says no service and sim card not detected even with a new sim",
+  "expected": "Cellular / SIM reader or baseband fault"
+ },
+ {
+  "device_type": "smartphone",
+  "brand": "Oppo",
+  "query": "walang signal at hindi mabasa ang sim",
+  "expected": "Cellular / SIM reader or baseband fault"
+ },
+ {
+  "device_type": "smartphone",
+  "brand": "Samsung",
+  "query": "the side button is stuck and wont click",
+  "expected": "Power / volume button or flex fault"
+ },
+ {
+  "device_type": "smartphone",
+  "brand": "Apple",
+  "query": "volume buttons stopped working and the power button feels loose",
+  "expected": "Power / volume button or flex fault"
+ },
+ {
+  "device_type": "smartphone",
+  "brand": "Apple",
+  "query": "completely dead after the electrical surge, no vibration, nothing when charging",
+  "expected": "Logic board / power IC (PMIC) fault"
+ },
+ {
+  "device_type": "laptop",
+  "brand": "Dell",
+  "query": "laptop will not power on at all after a brownout, no lights even with a good charger",
+  "expected": "Logic board / power IC (PMIC) fault"
+ },
+ {
+  "device_type": "laptop",
+  "brand": "Asus",
+  "query": "laptop is burning hot and the fans scream, then it shuts down in games",
+  "expected": "Overheating (blocked cooling / thermal paste / software load)"
+ },
+ {
+  "device_type": "smartphone",
+  "brand": "Samsung",
+  "query": "phone gets really hot even when idle and battery drops fast",
+  "expected": "Phone overheating (battery / charging IC / heavy software load)"
+ },
+ {
+  "device_type": "laptop",
+  "brand": "Dell",
+  "query": "hard drive clicking and windows takes ages to start, sometimes disk error",
+  "expected": "Failing storage drive (HDD/SSD) or corrupted OS install"
+ },
+ {
+  "device_type": "laptop",
+  "brand": "HP",
+  "query": "computer says operating system not found",
+  "expected": "Failing storage drive (HDD/SSD) or corrupted OS install"
+ },
+ {
+  "device_type": "laptop",
+  "brand": "Lenovo",
+  "query": "several keys dont type and the spacebar sticks",
+  "expected": "Laptop keyboard fault"
+ },
+ {
+  "device_type": "laptop",
+  "brand": "Lenovo",
+  "query": "screen flickers when I tilt the lid but an external monitor is fine",
+  "expected": "Laptop display panel / LCD cable / backlight fault"
+ },
+ {
+  "device_type": "laptop",
+  "brand": "HP",
+  "query": "the display is super dark, i can only see something with a flashlight",
+  "expected": "Laptop display panel / LCD cable / backlight fault"
+ },
+ {
+  "device_type": "laptop",
+  "brand": "Asus",
+  "query": "charger plugged in but the laptop says not charging and the light is off",
+  "expected": "DC jack / charger / adapter fault"
+ },
+ {
+  "device_type": "laptop",
+  "brand": "Acer",
+  "query": "long beeping at startup and nothing on screen",
+  "expected": "RAM / memory fault"
+ },
+ {
+  "device_type": "laptop",
+  "brand": "HP",
+  "query": "blue screen memory management error and random restarts",
+  "expected": "RAM / memory fault"
+ },
+ {
+  "device_type": "laptop",
+  "brand": "Asus",
+  "query": "so slow with ads popping up everywhere, i think a virus",
+  "expected": "Operating system / malware cleanup (software slowdown)"
+ },
+ {
+  "device_type": "laptop",
+  "brand": "Acer",
+  "query": "left hinge snapped and the lid wont stay open",
+  "expected": "Laptop hinge / chassis damage"
+ },
+ {
+  "device_type": "laptop",
+  "brand": "Dell",
+  "query": "cursor doesnt move and touchpad clicks are dead, mouse is fine",
+  "expected": "Laptop trackpad fault"
+ },
+ {
+  "device_type": "laptop",
+  "brand": "HP",
+  "query": "power led on and fans run but screen stays black, nothing displays",
+  "expected": "Laptop no display / no POST"
+ },
+ {
+  "device_type": "smartphone",
+  "brand": "Samsung",
+  "query": "earphones not detected and phone thinks headset is plugged in",
+  "expected": "Headphone jack / audio connector fault"
+ },
+ {
+  "device_type": "smartphone",
+  "brand": "Oppo",
+  "query": "only one side of my earphones plays and crackles when I move the plug",
+  "expected": "Headphone jack / audio connector fault"
+ }
+]

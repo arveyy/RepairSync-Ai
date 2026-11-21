@@ -1,0 +1,3 @@
+device_type,brand,model,symptoms,diagnosis,root_cause,checks,repair_action,parts,cost_min,cost_max,hours
+smartphone,Samsung,Galaxy A12,"[EXAMPLE - delete this row] Ayaw mag-charge, kailangan i-angle ang cable","Faulty charging port (dirty, loose or damaged)","Worn or dirty USB port","Clean port; try another cable | Check port with magnifier","Replace charging port flex","Charging port flex",350,900,1
+laptop,Lenovo,IdeaPad 3,"[EXAMPLE - delete this row] Laptop is slow and clicking sound from the drive","Failing storage drive (HDD/SSD) or corrupted OS install","Aging HDD","Check SMART status | Test with another drive","Replace with SSD and reinstall OS","SSD",1500,2800,2

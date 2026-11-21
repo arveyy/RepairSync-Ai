@@ -1,0 +1,11 @@
+# Keep configuration (database password, API key) and the session secret away from browsers.
+<FilesMatch "^(config(\.local)?\.php|\.session_secret|.*\.sqlite.*)$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
+</FilesMatch>
+Options -Indexes

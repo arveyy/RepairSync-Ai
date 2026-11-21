@@ -1,0 +1,4 @@
+job_no,date_received,date_released,branch,device_type,brand,model,problem,diagnosis,repair_done,status,parts_cost,labor_cost,total,amount_paid,payment_method,technician
+JO-0001,2026-01-12,2026-01-14,Tisa,smartphone,Samsung,Galaxy A12,"[EXAMPLE - delete this row] Nahulog sa tubig, ayaw mag on","Liquid / water damage","Ultrasonic clean and replaced charging IC",released,1200,500,1700,1700,gcash,Tony
+JO-0002,1/15/2026,1/15/2026,SM JMall,laptop,Lenovo,IdeaPad 3,"[EXAMPLE - delete this row] Laptop is slow, clicking sound from the drive","Failing storage drive","Replaced with SSD and reinstalled OS",released,1800,700,,2500,cash,
+JO-0003,2026-01-16,2026-01-16,Lapulapu,smartphone,Oppo,A16,"[EXAMPLE - delete this row] Hindi na nag cha-charge",,,cancelled,,,,,,

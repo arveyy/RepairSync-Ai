@@ -1,0 +1,436 @@
+{
+ "samples": [
+  [
+   "Maria Santos",
+   "09171230001",
+   1,
+   "smartphone",
+   "Apple",
+   "iPhone 11",
+   "Nahulog ang phone, basag ang screen pero gumagana pa ang touch",
+   "released",
+   5,
+   [
+    [
+     "part",
+     "Display assembly",
+     3800
+    ],
+    [
+     "labor",
+     "Installation",
+     500
+    ]
+   ],
+   "Cracked or damaged display assembly",
+   "Replaced display assembly and recalibrated.",
+   12,
+   "normal"
+  ],
+  [
+   "Juan dela Cruz",
+   "09171230002",
+   1,
+   "laptop",
+   "Lenovo",
+   "IdeaPad 3",
+   "Laptop is very slow and takes forever to boot, clicking sound from the hard drive",
+   "released",
+   5,
+   [
+    [
+     "part",
+     "256GB SSD",
+     1900
+    ],
+    [
+     "labor",
+     "Clone data + OS install",
+     800
+    ]
+   ],
+   "Failing storage drive (HDD/SSD) or corrupted OS install",
+   "Replaced HDD with SSD, cloned data, reinstalled drivers.",
+   9,
+   "normal"
+  ],
+  [
+   "Ana Reyes",
+   "09171230003",
+   2,
+   "smartphone",
+   "Samsung",
+   "Galaxy A12",
+   "Ayaw mag charge, loose ang charging port kailangan i-angle ang cable",
+   "released",
+   6,
+   [
+    [
+     "part",
+     "Charging port flex",
+     650
+    ],
+    [
+     "labor",
+     "Replace port",
+     450
+    ]
+   ],
+   "Faulty charging port (dirty, loose or damaged)",
+   "Replaced charging port flex.",
+   7,
+   "normal"
+  ],
+  [
+   "Pedro Garcia",
+   "09171230004",
+   1,
+   "smartphone",
+   "Oppo",
+   "A57",
+   "Battery drains very fast, shuts off at 30 percent",
+   "completed",
+   5,
+   [
+    [
+     "part",
+     "Battery",
+     1100
+    ],
+    [
+     "labor",
+     "Replacement",
+     300
+    ]
+   ],
+   "Battery degradation / failing battery",
+   "Installed new battery and calibrated.",
+   3,
+   "normal"
+  ],
+  [
+   "Liza Fernandez",
+   "09171230005",
+   3,
+   "laptop",
+   "HP",
+   "Pavilion 15",
+   "Laptop overheating, fan is loud and it shuts down when gaming",
+   "quality_check",
+   7,
+   [
+    [
+     "labor",
+     "Clean fan/heatsink",
+     500
+    ],
+    [
+     "part",
+     "Thermal paste",
+     250
+    ]
+   ],
+   "Overheating (blocked cooling / thermal paste / software load)",
+   "Cleaned cooling system and applied new thermal paste.",
+   2,
+   "normal"
+  ],
+  [
+   "Mark Villanueva",
+   "09171230006",
+   1,
+   "smartphone",
+   "Xiaomi",
+   "Redmi Note 10",
+   "Phone stuck on logo and keeps restarting after update",
+   "repairing",
+   5,
+   [
+    [
+     "labor",
+     "Firmware reflash",
+     800
+    ]
+   ],
+   "Software / operating system corruption (boot loop)",
+   null,
+   2,
+   "high"
+  ],
+  [
+   "Grace Lim",
+   "09171230007",
+   2,
+   "tablet",
+   "Apple",
+   "iPad 9th gen",
+   "Tablet screen glass broke at the corner, cracked display",
+   "repairing",
+   6,
+   [
+    [
+     "part",
+     "Display assembly",
+     4800
+    ],
+    [
+     "labor",
+     "Installation",
+     600
+    ]
+   ],
+   "Cracked or damaged display assembly",
+   null,
+   4,
+   "normal"
+  ],
+  [
+   "Ramon Cruz",
+   "09171230008",
+   1,
+   "laptop",
+   "Acer",
+   "Aspire 3",
+   "Laptop not charging, plugged in but charger light is off",
+   "awaiting_approval",
+   5,
+   [
+    [
+     "part",
+     "AC adapter",
+     1200
+    ],
+    [
+     "labor",
+     "Diagnosis + DC jack test",
+     300
+    ]
+   ],
+   null,
+   null,
+   1,
+   "normal"
+  ],
+  [
+   "Joy Mendoza",
+   "09171230009",
+   3,
+   "smartphone",
+   "Realme",
+   "C25",
+   "Phone got wet in the rain, touch goes crazy and battery drains quickly",
+   "diagnosing",
+   7,
+   [],
+   null,
+   null,
+   1,
+   "urgent"
+  ],
+  [
+   "Carlo Bautista",
+   "09171230010",
+   1,
+   "smartphone",
+   "Samsung",
+   "Galaxy A51",
+   "Ghost touch, touches by itself and types by itself",
+   "diagnosing",
+   5,
+   [],
+   null,
+   null,
+   1,
+   "normal"
+  ],
+  [
+   "Nina Aquino",
+   "09171230011",
+   2,
+   "laptop",
+   "Dell",
+   "Inspiron 15",
+   "Some keys not working and letters missing when typing",
+   "received",
+   null,
+   [],
+   null,
+   null,
+   0,
+   "normal"
+  ],
+  [
+   "Ben Torres",
+   "09171230012",
+   1,
+   "smartphone",
+   "Apple",
+   "iPhone 8",
+   "No sound from speaker and calls are muffled",
+   "received",
+   null,
+   [],
+   null,
+   null,
+   0,
+   "low"
+  ],
+  [
+   "Hannah Uy",
+   "09171230013",
+   3,
+   "smartphone",
+   "Oppo",
+   "A16",
+   "Phone is completely dead after a power surge, no signs of life",
+   "booked",
+   null,
+   [],
+   null,
+   null,
+   0,
+   "normal"
+  ],
+  [
+   "Victor Ramos",
+   "09171230014",
+   2,
+   "tablet",
+   "Lenovo",
+   "Tab M10",
+   "Wifi keeps disconnecting and cannot connect bluetooth earphones",
+   "booked",
+   null,
+   [],
+   null,
+   null,
+   0,
+   "normal"
+  ],
+  [
+   "Elaine Sy",
+   "09171230015",
+   1,
+   "smartphone",
+   "Samsung",
+   "Galaxy S9",
+   "Back cover is lifting and screen is bulging, battery swollen",
+   "cancelled",
+   null,
+   [],
+   null,
+   null,
+   6,
+   "high"
+  ]
+ ],
+ "jobs": [
+  [
+   "smartphone",
+   "Samsung",
+   "Galaxy A14",
+   "Screen replacement",
+   1800,
+   4200,
+   "Cracked or damaged display assembly"
+  ],
+  [
+   "smartphone",
+   "Apple",
+   "iPhone 11",
+   "Battery replacement",
+   900,
+   1800,
+   "Battery degradation / failing battery"
+  ],
+  [
+   "smartphone",
+   "Oppo",
+   "A57",
+   "Charging port replacement",
+   350,
+   700,
+   "Faulty charging port (dirty, loose or damaged)"
+  ],
+  [
+   "smartphone",
+   "Xiaomi",
+   "Redmi Note 11",
+   "Firmware reflash",
+   0,
+   0,
+   "Software / operating system corruption (boot loop)"
+  ],
+  [
+   "smartphone",
+   "Realme",
+   "C35",
+   "Water damage cleaning",
+   0,
+   600,
+   "Liquid / water damage"
+  ],
+  [
+   "tablet",
+   "Apple",
+   "iPad 9th gen",
+   "Screen replacement",
+   3500,
+   5200,
+   "Cracked or damaged display assembly"
+  ],
+  [
+   "laptop",
+   "Lenovo",
+   "IdeaPad 3",
+   "SSD upgrade + OS install",
+   1500,
+   2600,
+   "Failing storage drive (HDD/SSD) or corrupted OS install"
+  ],
+  [
+   "laptop",
+   "HP",
+   "Pavilion 15",
+   "Cooling clean + thermal paste",
+   150,
+   350,
+   "Overheating (blocked cooling / thermal paste / software load)"
+  ],
+  [
+   "laptop",
+   "Acer",
+   "Aspire 3",
+   "Keyboard replacement",
+   900,
+   1700,
+   "Keyboard fault (stuck, missing or non-working keys)"
+  ],
+  [
+   "laptop",
+   "Dell",
+   "Inspiron 15",
+   "AC adapter + DC jack check",
+   900,
+   1500,
+   "Charger / DC jack fault"
+  ]
+ ],
+ "names": [
+  "Rica Domingo",
+  "Joel Tan",
+  "Mae Ocampo",
+  "Rey Abella",
+  "Cathy Go",
+  "Nico Pineda",
+  "Lorna Diaz",
+  "Paolo Sison",
+  "Tina Lopez",
+  "Ed Navarro",
+  "Bea Salazar",
+  "Ken Alvarez",
+  "Ivy Castro",
+  "Leo Bernardo",
+  "Fe Padilla"
+ ]
+}

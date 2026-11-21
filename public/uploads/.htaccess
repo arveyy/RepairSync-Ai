@@ -1,0 +1,10 @@
+# Shop-owned logo files. Images only; never execute uploaded content.
+Options -Indexes
+
+<FilesMatch "\.(php|php[0-9]|phtml|phar|pl|cgi|htaccess)$">
+  Require all denied
+</FilesMatch>
+
+<IfModule mod_php.c>
+  php_flag engine off
+</IfModule>

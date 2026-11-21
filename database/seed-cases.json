@@ -1,0 +1,1027 @@
+[
+ {
+  "diagnosis": "Cracked or damaged display assembly",
+  "types": [
+   "smartphone",
+   "tablet"
+  ],
+  "root_cause": "Impact damage to the glass/LCD/OLED panel and digitizer.",
+  "checks": "Inspect frame for bending|Test touch response on all screen areas|Check for liquid-damage indicators|Verify no swelling battery under the panel",
+  "repair_action": "Replace display assembly; recalibrate touch and True Tone/auto-brightness where applicable.",
+  "parts": "Display assembly (OEM-grade or service pack)",
+  "cost": [
+   1800,
+   9500
+  ],
+  "hours": 1.5,
+  "symptoms": [
+   [
+    "Apple",
+    "iPhone 11",
+    "Phone fell and the screen is cracked with spider web lines, touch still works"
+   ],
+   [
+    "Samsung",
+    "Galaxy A52",
+    "Nahulog ang phone basag ang screen may mga green lines at black spots"
+   ],
+   [
+    "Oppo",
+    "A57",
+    "Screen shattered after drop, display has ink spots and lines spreading"
+   ],
+   [
+    "Apple",
+    "iPad 9th gen",
+    "Tablet screen glass broke at the corner, touch works partially, cracked display"
+   ]
+  ]
+ },
+ {
+  "diagnosis": "Faulty display (no physical damage) / flex or panel failure",
+  "types": [
+   "smartphone",
+   "tablet"
+  ],
+  "root_cause": "Failed LCD/OLED panel or loose display flex cable without visible impact.",
+  "checks": "Reseat display flex cable|Test with known-good display|Check for pressure marks|Rule out software by booting to recovery",
+  "repair_action": "Reseat or replace display flex; replace display assembly if panel is defective.",
+  "parts": "Display assembly or flex cable",
+  "cost": [
+   1500,
+   8500
+  ],
+  "hours": 1.2,
+  "symptoms": [
+   [
+    "Xiaomi",
+    "Redmi Note 10",
+    "Vertical green line appeared on the screen, no drop, and it keeps spreading"
+   ],
+   [
+    "Samsung",
+    "Galaxy S20",
+    "Screen flickers and has pink and purple lines, not dropped before"
+   ],
+   [
+    "Realme",
+    "C25",
+    "Dead pixels and white spots on the display that grow bigger over time"
+   ],
+   [
+    "Apple",
+    "iPhone XR",
+    "Display flashing and horizontal lines after normal use, no physical damage"
+   ]
+  ]
+ },
+ {
+  "diagnosis": "Battery degradation / failing battery",
+  "types": [
+   "smartphone",
+   "tablet"
+  ],
+  "root_cause": "Li-ion cell capacity loss after many charge cycles; high internal resistance causes voltage drops.",
+  "checks": "Read battery health / cycle count|Measure charging current with USB meter|Check for swelling|Compare drain against idle test",
+  "repair_action": "Replace battery and run a full charge/discharge calibration.",
+  "parts": "Battery (OEM-grade)",
+  "cost": [
+   900,
+   3200
+  ],
+  "hours": 0.8,
+  "symptoms": [
+   [
+    "Apple",
+    "iPhone 8",
+    "Battery drains very fast, percentage drops from 50 to 10 quickly and phone shuts off at 20%"
+   ],
+   [
+    "Samsung",
+    "Galaxy J7",
+    "Mabilis maubos ang battery kahit hindi ginagamit, nag-shutdown bigla kahit may 30%"
+   ],
+   [
+    "Oppo",
+    "A5s",
+    "Phone dies quickly, battery life is only a couple of hours, battery health is poor"
+   ],
+   [
+    "Huawei",
+    "MatePad",
+    "Tablet battery does not last, drains even on standby and turns off randomly at low percentage"
+   ]
+  ]
+ },
+ {
+  "diagnosis": "Swollen battery (safety hazard)",
+  "types": [
+   "smartphone",
+   "tablet",
+   "laptop"
+  ],
+  "root_cause": "Gas build-up in the Li-ion/Li-poly cell from age, overcharging or heat; may deform the chassis.",
+  "checks": "Stop charging immediately|Look for lifting screen/back cover or raised trackpad|Do not puncture or press the cell|Check charger output",
+  "repair_action": "Safely remove and recycle the swollen battery, replace with new cell, inspect chassis/screen for damage.",
+  "parts": "Battery, possibly display/trackpad if deformed",
+  "cost": [
+   1200,
+   4500
+  ],
+  "hours": 1,
+  "symptoms": [
+   [
+    "Samsung",
+    "Galaxy S9",
+    "Back cover is lifting and the screen is bulging, battery looks swollen and bloated"
+   ],
+   [
+    "Apple",
+    "MacBook Air",
+    "Trackpad is raised and the case is bulging at the bottom, laptop does not sit flat"
+   ],
+   [
+    "Xiaomi",
+    "Redmi 9",
+    "Screen is lifting from the frame, battery expanded and phone feels hot while charging"
+   ],
+   [
+    "Lenovo",
+    "IdeaPad 3",
+    "Laptop base is bulging and the keyboard is pushed up, battery swollen"
+   ]
+  ]
+ },
+ {
+  "diagnosis": "Faulty charging port (dirty, loose or damaged)",
+  "types": [
+   "smartphone",
+   "tablet"
+  ],
+  "root_cause": "Debris/lint in the port or worn/bent connector pins; solder joints cracked by repeated plugging.",
+  "checks": "Inspect port with magnification for lint|Try a known-good cable and charger|Wiggle test for intermittent contact|Measure charge current",
+  "repair_action": "Clean the port; if pins are worn or broken replace the charging port sub-board or solder a new connector.",
+  "parts": "Charging port flex / USB-C port",
+  "cost": [
+   600,
+   2400
+  ],
+  "hours": 1,
+  "symptoms": [
+   [
+    "Samsung",
+    "Galaxy A12",
+    "Phone only charges when I hold the cable at a certain angle, charging port feels loose"
+   ],
+   [
+    "Apple",
+    "iPhone 7",
+    "Not charging unless the lightning cable is pressed in, there is lint inside the port"
+   ],
+   [
+    "Oppo",
+    "Reno 5",
+    "Ayaw mag charge kailangan i-wiggle ang charger, cable keeps disconnecting"
+   ],
+   [
+    "Realme",
+    "Narzo 30",
+    "Charging is very slow and sometimes does not charge at all, type c port loose"
+   ]
+  ]
+ },
+ {
+  "diagnosis": "Liquid / water damage",
+  "types": [
+   "smartphone",
+   "tablet",
+   "laptop"
+  ],
+  "root_cause": "Liquid ingress causing corrosion and short circuits on the logic board and connectors.",
+  "checks": "Check liquid-contact indicators|Disconnect battery immediately; do not charge|Inspect board under microscope for corrosion|Ultrasonic clean and test rails",
+  "repair_action": "Disassemble, ultrasonic clean the board, replace corroded components/connectors and test all functions.",
+  "parts": "Varies: connectors, ICs, display or battery",
+  "cost": [
+   1500,
+   9000
+  ],
+  "hours": 3,
+  "symptoms": [
+   [
+    "Apple",
+    "iPhone 12",
+    "Phone fell in water, nabasa then stopped working properly, screen has colored lines and speaker crackles"
+   ],
+   [
+    "Samsung",
+    "Galaxy A21s",
+    "Nalubog sa tubig kahapon, hindi na mag-on and charger port shows corrosion"
+   ],
+   [
+    "HP",
+    "Pavilion 15",
+    "Coffee spilled on the keyboard, laptop now shuts off and some keys not working"
+   ],
+   [
+    "Xiaomi",
+    "Redmi Note 9",
+    "Phone got wet in the rain, touch goes crazy and battery drains quickly, moisture detected"
+   ]
+  ]
+ },
+ {
+  "diagnosis": "Software / operating system corruption (boot loop)",
+  "types": [
+   "smartphone",
+   "tablet"
+  ],
+  "root_cause": "Corrupted firmware or failed update; sometimes aggravated by low storage or a failing battery.",
+  "checks": "Try forced restart|Boot to recovery/fastboot and check for update errors|Back up data if possible|Reflash firmware and test",
+  "repair_action": "Reflash or restore firmware (preserving data when possible), then verify storage and battery health.",
+  "parts": "None (labour only)",
+  "cost": [
+   500,
+   1500
+  ],
+  "hours": 1,
+  "symptoms": [
+   [
+    "Samsung",
+    "Galaxy A32",
+    "Phone is stuck on the logo and keeps restarting after a software update"
+   ],
+   [
+    "Apple",
+    "iPhone 11",
+    "Stuck on the apple logo, bootloop, update failed and now it keeps rebooting"
+   ],
+   [
+    "Xiaomi",
+    "Redmi 10",
+    "Nag-bootloop pagkatapos mag-update, hindi makapasok sa home screen, stuck at logo"
+   ],
+   [
+    "Apple",
+    "iPad Air",
+    "Tablet restart loop after OS update, recovery mode shows an error"
+   ]
+  ]
+ },
+ {
+  "diagnosis": "Touch digitizer / touch controller fault",
+  "types": [
+   "smartphone",
+   "tablet"
+  ],
+  "root_cause": "Failing digitizer layer or touch IC connection; ghost touches often caused by moisture or a bad screen replacement.",
+  "checks": "Run a touch diagnostic/test grid|Remove screen protector and case|Check display flex seating|Test with known-good display",
+  "repair_action": "Replace display assembly (digitizer) or reseat/replace the touch flex; re-test with touch grid.",
+  "parts": "Display assembly",
+  "cost": [
+   1500,
+   6500
+  ],
+  "hours": 1.2,
+  "symptoms": [
+   [
+    "Samsung",
+    "Galaxy A51",
+    "Ghost touch, phone touches by itself and types by itself, touchscreen is unreliable"
+   ],
+   [
+    "Apple",
+    "iPhone XS",
+    "Part of the screen does not respond to touch, there is a dead zone on the left side"
+   ],
+   [
+    "Oppo",
+    "A16",
+    "Ayaw mag-touch ang kalahati ng screen, touch lag and unresponsive in some areas"
+   ],
+   [
+    "Lenovo",
+    "Tab M10",
+    "Tablet touch is not responding in the middle, randomly opens apps by itself"
+   ]
+  ]
+ },
+ {
+  "diagnosis": "Speaker or earpiece fault",
+  "types": [
+   "smartphone",
+   "tablet",
+   "laptop"
+  ],
+  "root_cause": "Clogged speaker mesh, damaged speaker coil, or loose audio flex/connector.",
+  "checks": "Test with headphones to isolate speaker|Clean speaker grille|Play test tones at various volumes|Check audio settings and software",
+  "repair_action": "Clean mesh; replace loudspeaker or earpiece module; reseat audio connector.",
+  "parts": "Loudspeaker / earpiece module",
+  "cost": [
+   500,
+   1800
+  ],
+  "hours": 0.8,
+  "symptoms": [
+   [
+    "Apple",
+    "iPhone 8",
+    "No sound from the speaker, calls are muffled and ringtone is very low"
+   ],
+   [
+    "Samsung",
+    "Galaxy A20",
+    "Walang tunog ang speaker, crackling and distorted sound when playing music"
+   ],
+   [
+    "Oppo",
+    "A3s",
+    "Cannot hear the caller on the earpiece, only works with loudspeaker"
+   ],
+   [
+    "Dell",
+    "Inspiron 14",
+    "Laptop speakers have no sound and there is crackling noise at high volume"
+   ]
+  ]
+ },
+ {
+  "diagnosis": "Microphone fault",
+  "types": [
+   "smartphone",
+   "tablet",
+   "laptop"
+  ],
+  "root_cause": "Blocked or failed microphone element, or damaged mic flex/board connection.",
+  "checks": "Record test with the voice recorder app|Test each mic (bottom/top/rear)|Clean mic ports|Inspect mic flex and solder joints",
+  "repair_action": "Clean or replace microphone element / charging-port sub-board that carries the mic.",
+  "parts": "Microphone / charging port board",
+  "cost": [
+   500,
+   1700
+  ],
+  "hours": 0.8,
+  "symptoms": [
+   [
+    "Samsung",
+    "Galaxy A30",
+    "People cannot hear me during calls, my voice is not heard but I can hear them"
+   ],
+   [
+    "Apple",
+    "iPhone 7",
+    "Microphone not working, voice messages are silent and the caller cant hear me"
+   ],
+   [
+    "Realme",
+    "C11",
+    "Dili madungog ang boses ko sa call, mic problem even on speaker mode"
+   ],
+   [
+    "HP",
+    "Probook 450",
+    "Built-in laptop microphone does not pick up voice in meetings"
+   ]
+  ]
+ },
+ {
+  "diagnosis": "Camera module fault",
+  "types": [
+   "smartphone",
+   "tablet"
+  ],
+  "root_cause": "Failed camera sensor/OIS, damaged lens, or loose camera flex.",
+  "checks": "Test front and rear cameras in different apps|Inspect lens for cracks/dust|Check for OIS rattling|Rule out software with safe mode",
+  "repair_action": "Replace the camera module (or lens glass if only the lens is cracked).",
+  "parts": "Camera module",
+  "cost": [
+   900,
+   4200
+  ],
+  "hours": 0.8,
+  "symptoms": [
+   [
+    "Apple",
+    "iPhone 11",
+    "Rear camera is blurry and shaking, camera app shows a black screen sometimes"
+   ],
+   [
+    "Samsung",
+    "Galaxy S10",
+    "Camera error, cannot focus, photos are blurry with a dark spot"
+   ],
+   [
+    "Oppo",
+    "A74",
+    "Ayaw mag-open ang camera, front camera is black and selfie is not working"
+   ],
+   [
+    "Xiaomi",
+    "Mi 11",
+    "Back camera lens is cracked and photos have a blur and autofocus keeps hunting"
+   ]
+  ]
+ },
+ {
+  "diagnosis": "Wi-Fi / Bluetooth antenna or module fault",
+  "types": [
+   "smartphone",
+   "tablet",
+   "laptop"
+  ],
+  "root_cause": "Antenna connector loose, Wi-Fi/BT chip or board fault, or driver corruption on laptops.",
+  "checks": "Forget and rejoin networks / reset network settings|Test on multiple routers|Check antenna connector seating|For laptops reinstall wireless driver",
+  "repair_action": "Reseat or replace antenna; replace Wi-Fi card (laptops) or reball/replace Wi-Fi IC (phones).",
+  "parts": "Wi-Fi card / antenna cable",
+  "cost": [
+   600,
+   3500
+  ],
+  "hours": 1,
+  "symptoms": [
+   [
+    "Apple",
+    "iPhone 8",
+    "Wifi is greyed out and cannot turn on, bluetooth also not working"
+   ],
+   [
+    "Samsung",
+    "Galaxy A50",
+    "Keeps disconnecting from wifi and weak signal even near the router"
+   ],
+   [
+    "Acer",
+    "Aspire 5",
+    "Laptop shows no wifi networks and the wireless adapter is missing"
+   ],
+   [
+    "Lenovo",
+    "Tab P11",
+    "Cannot connect bluetooth earphones, wifi connection drops all the time"
+   ]
+  ]
+ },
+ {
+  "diagnosis": "Cellular / SIM reader or baseband fault",
+  "types": [
+   "smartphone",
+   "tablet"
+  ],
+  "root_cause": "Damaged SIM tray/reader, antenna flex, or baseband/RF component failure.",
+  "checks": "Test known-good SIM in another phone|Check SIM tray and reader pins|Verify IMEI/baseband status|Reset network settings",
+  "repair_action": "Replace SIM tray/reader; repair antenna flex or RF components as required.",
+  "parts": "SIM reader / antenna flex",
+  "cost": [
+   700,
+   3800
+  ],
+  "hours": 1.2,
+  "symptoms": [
+   [
+    "Samsung",
+    "Galaxy A10",
+    "No service and the sim card is not detected, shows emergency calls only"
+   ],
+   [
+    "Apple",
+    "iPhone XR",
+    "Searching for signal all the time and no network, invalid sim message"
+   ],
+   [
+    "Oppo",
+    "A15",
+    "Walang signal, hindi ma-detect ang sim card kahit palitan ng ibang sim"
+   ],
+   [
+    "Xiaomi",
+    "Redmi 8",
+    "Mobile data not working, weak network signal even in the city, imei shows unknown"
+   ]
+  ]
+ },
+ {
+  "diagnosis": "Power / volume button or flex fault",
+  "types": [
+   "smartphone",
+   "tablet"
+  ],
+  "root_cause": "Worn button contacts or damaged side flex cable.",
+  "checks": "Test button in recovery or button-test app|Check for debris around the button|Inspect flex connector|Verify with accessibility alternatives",
+  "repair_action": "Clean contacts; replace power/volume flex cable.",
+  "parts": "Power/volume flex cable",
+  "cost": [
+   500,
+   1800
+  ],
+  "hours": 0.8,
+  "symptoms": [
+   [
+    "Samsung",
+    "Galaxy A02",
+    "Power button is stuck and does not click, I cannot turn on or lock the screen"
+   ],
+   [
+    "Apple",
+    "iPhone 7",
+    "Volume button not working and the side button feels loose"
+   ],
+   [
+    "Oppo",
+    "A31",
+    "Ayaw mag-click ng power button, kailangan pang idiin nang malakas"
+   ],
+   [
+    "Apple",
+    "iPad 8",
+    "Tablet power button is unresponsive, only wakes when charging"
+   ]
+  ]
+ },
+ {
+  "diagnosis": "Logic board / power IC (PMIC) fault",
+  "types": [
+   "smartphone",
+   "tablet",
+   "laptop"
+  ],
+  "root_cause": "Short on a power rail or failed power-management IC, often after liquid, drop or power surge.",
+  "checks": "Measure current draw on a bench supply|Thermal camera for hot component|Test with known-good battery/display|Check for burnt components",
+  "repair_action": "Board-level repair: locate shorted rail, replace failed IC/capacitor; otherwise replace the board.",
+  "parts": "PMIC / capacitors / motherboard",
+  "cost": [
+   2500,
+   14000
+  ],
+  "hours": 4,
+  "symptoms": [
+   [
+    "Apple",
+    "iPhone 11",
+    "Phone is completely dead, no signs of life, does not charge and no vibration after a power surge"
+   ],
+   [
+    "Samsung",
+    "Galaxy A71",
+    "Hindi na mag-on at hindi na nagcha-charge, mainit ang likod habang naka-charger and burnt smell"
+   ],
+   [
+    "Dell",
+    "Latitude 5400",
+    "Laptop wont turn on after a brownout, no power lights at all with a known good charger"
+   ],
+   [
+    "Huawei",
+    "Nova 7i",
+    "Phone suddenly died, wont power on, draws no current and gets hot near the board"
+   ]
+  ]
+ },
+ {
+  "diagnosis": "Overheating (blocked cooling / thermal paste / software load)",
+  "types": [
+   "laptop"
+  ],
+  "root_cause": "Dust-clogged heatsink and fan, dried thermal paste, or runaway background processes causing thermal throttling.",
+  "checks": "Monitor CPU/GPU temps under load|Listen for fan speed and noise|Inspect vents for dust|Check for malware/high CPU processes",
+  "repair_action": "Open chassis, clean fan and heatsink, replace thermal paste/pads, verify temps under load.",
+  "parts": "Thermal paste / thermal pads",
+  "cost": [
+   600,
+   1800
+  ],
+  "hours": 1.5,
+  "symptoms": [
+   [
+    "Asus",
+    "VivoBook 15",
+    "Laptop gets very hot and the fan is loud, shuts down when playing games"
+   ],
+   [
+    "HP",
+    "Pavilion 14",
+    "Overheating and slow, init ang keyboard area, fan noisy all the time and shuts off randomly"
+   ],
+   [
+    "Acer",
+    "Nitro 5",
+    "Gets too hot, throttles and the fan sounds like whirring, vents are dusty"
+   ],
+   [
+    "Lenovo",
+    "ThinkPad E14",
+    "Laptop heats up quickly and turns off by itself after 20 minutes of use"
+   ]
+  ]
+ },
+ {
+  "diagnosis": "Phone overheating (battery / charging IC / heavy software load)",
+  "types": [
+   "smartphone",
+   "tablet"
+  ],
+  "root_cause": "Aged battery, charging IC fault, or a runaway app causing continuous high load.",
+  "checks": "Check battery temperature in diagnostics|Test with original charger|Boot safe mode to rule out apps|Inspect for swelling",
+  "repair_action": "Replace battery or charging IC as indicated; remove problematic apps or reflash software.",
+  "parts": "Battery / charging IC",
+  "cost": [
+   900,
+   3500
+  ],
+  "hours": 1,
+  "symptoms": [
+   [
+    "Samsung",
+    "Galaxy S8",
+    "Phone gets very hot while charging and the battery drains fast"
+   ],
+   [
+    "Oppo",
+    "A53",
+    "Mainit na mainit ang phone kahit walang ginagawa, nag-iinit ang battery area"
+   ],
+   [
+    "Apple",
+    "iPhone XR",
+    "Phone overheats when using camera or games and displays a temperature warning"
+   ],
+   [
+    "Realme",
+    "6",
+    "Gets hot even on standby, battery percentage drops quickly and the phone slows down"
+   ]
+  ]
+ },
+ {
+  "diagnosis": "Failing storage drive (HDD/SSD) or corrupted OS install",
+  "types": [
+   "laptop"
+  ],
+  "root_cause": "Failing HDD/SSD (bad sectors) or corrupted Windows installation causing slow boot and read errors.",
+  "checks": "Run SMART diagnostics|Listen for clicking from HDD|Check BIOS drive detection|Back up data before any repair",
+  "repair_action": "Clone data if possible, replace drive with SSD and reinstall OS and drivers.",
+  "parts": "SSD (e.g. 256-512 GB)",
+  "cost": [
+   1800,
+   4500
+  ],
+  "hours": 2,
+  "symptoms": [
+   [
+    "Dell",
+    "Inspiron 15",
+    "Laptop takes forever to boot and keeps freezing, there is a clicking noise from the hard drive"
+   ],
+   [
+    "HP",
+    "240 G7",
+    "Operating system not found, disk read error and files are missing or corrupted"
+   ],
+   [
+    "Lenovo",
+    "IdeaPad 330",
+    "Very slow, takes long to open anything and shows a disk error on startup"
+   ],
+   [
+    "Acer",
+    "Aspire E15",
+    "Windows wont boot, stuck on startup repair and the ssd is not detected in bios"
+   ]
+  ]
+ },
+ {
+  "diagnosis": "Laptop keyboard fault",
+  "types": [
+   "laptop"
+  ],
+  "root_cause": "Worn key membrane, liquid residue under keys, or detached keyboard ribbon.",
+  "checks": "Run keyboard test utility|Inspect for liquid residue|Reseat keyboard ribbon cable|Check external keyboard works",
+  "repair_action": "Clean contacts or replace laptop keyboard assembly.",
+  "parts": "Keyboard assembly",
+  "cost": [
+   1200,
+   3800
+  ],
+  "hours": 1.2,
+  "symptoms": [
+   [
+    "Lenovo",
+    "ThinkPad T480",
+    "Some keys are not working, letters are missing when typing and a few keys are sticky"
+   ],
+   [
+    "HP",
+    "Pavilion 15",
+    "Keyboard types wrong characters and several keys do not respond"
+   ],
+   [
+    "Asus",
+    "X441",
+    "Hindi gumagana ang ilang keys ng keyboard, spacebar stuck"
+   ],
+   [
+    "Dell",
+    "Vostro 3400",
+    "Keyboard backlight not working and multiple keys dead after cleaning"
+   ]
+  ]
+ },
+ {
+  "diagnosis": "Laptop display panel / LCD cable / backlight fault",
+  "types": [
+   "laptop"
+  ],
+  "root_cause": "Damaged LCD panel, worn display cable at the hinge, or failed backlight/inverter circuit.",
+  "checks": "Connect external monitor to isolate GPU vs panel|Flex the lid to test cable|Shine a flashlight on the screen for backlight|Inspect panel for pressure damage",
+  "repair_action": "Replace LCD panel or display (eDP) cable; repair backlight circuit if board-level.",
+  "parts": "LCD panel / display cable",
+  "cost": [
+   2200,
+   7500
+  ],
+  "hours": 1.8,
+  "symptoms": [
+   [
+    "Lenovo",
+    "IdeaPad S145",
+    "Screen flickers when I move the lid and works fine on an external monitor"
+   ],
+   [
+    "HP",
+    "14-cm",
+    "Laptop screen is very dim, image is only visible with a flashlight, backlight problem"
+   ],
+   [
+    "Acer",
+    "Swift 3",
+    "Cracked laptop screen with vertical lines after being pressed in the bag"
+   ],
+   [
+    "Dell",
+    "XPS 13",
+    "Display shows horizontal lines and goes blank at certain lid angles, external hdmi works"
+   ]
+  ]
+ },
+ {
+  "diagnosis": "DC jack / charger / adapter fault",
+  "types": [
+   "laptop"
+  ],
+  "root_cause": "Faulty adapter or damaged DC jack/charging connector on the motherboard.",
+  "checks": "Test with a known-good adapter|Measure adapter output voltage|Wiggle test on the DC jack|Check for burnt pins or loose solder joints",
+  "repair_action": "Replace adapter; resolder or replace DC jack / charging cable harness.",
+  "parts": "AC adapter / DC jack",
+  "cost": [
+   800,
+   3200
+  ],
+  "hours": 1.2,
+  "symptoms": [
+   [
+    "Acer",
+    "Aspire 3",
+    "Laptop not charging, plugged in but not charging and the charger light is off"
+   ],
+   [
+    "HP",
+    "15-da",
+    "Charger not detected, only works when the cable is held at an angle, dc jack loose"
+   ],
+   [
+    "Asus",
+    "TUF F15",
+    "Laptop runs on battery only, the adapter is not recognized and the port feels loose"
+   ],
+   [
+    "Lenovo",
+    "IdeaPad 3",
+    "Battery stuck at 0 percent while plugged in, charger port wobbles"
+   ]
+  ]
+ },
+ {
+  "diagnosis": "RAM / memory fault",
+  "types": [
+   "laptop"
+  ],
+  "root_cause": "Faulty or poorly seated memory module causing crashes, beep codes or no boot.",
+  "checks": "Reseat RAM modules|Run memory diagnostic (MemTest)|Test modules one at a time|Listen for beep codes",
+  "repair_action": "Clean contacts and reseat; replace defective RAM module.",
+  "parts": "RAM module (SO-DIMM)",
+  "cost": [
+   900,
+   3500
+  ],
+  "hours": 0.8,
+  "symptoms": [
+   [
+    "Dell",
+    "Inspiron 3520",
+    "Laptop gives continuous beeping on startup and nothing shows on the screen"
+   ],
+   [
+    "HP",
+    "ProBook 450",
+    "Random blue screens and the computer restarts randomly, memory error reported"
+   ],
+   [
+    "Lenovo",
+    "ThinkPad E15",
+    "Crashes randomly and turns off, fans spin but no display after adding a new ram"
+   ],
+   [
+    "Acer",
+    "Aspire 5",
+    "Frequent blue screen with memory management error and random restarts"
+   ]
+  ]
+ },
+ {
+  "diagnosis": "Operating system / malware cleanup (software slowdown)",
+  "types": [
+   "laptop",
+   "smartphone",
+   "tablet"
+  ],
+  "root_cause": "Malware, bloat, or a corrupted OS profile causing sluggish performance and pop-ups.",
+  "checks": "Check task manager/process list|Run anti-malware scan|Check storage free space|Review startup programs",
+  "repair_action": "Remove malware, clean startup items, update drivers/OS; reinstall OS if corrupted.",
+  "parts": "None (labour only)",
+  "cost": [
+   400,
+   1500
+  ],
+  "hours": 1.5,
+  "symptoms": [
+   [
+    "Asus",
+    "VivoBook",
+    "Laptop is very slow and laggy with pop ups and ads, probably a virus"
+   ],
+   [
+    "HP",
+    "Pavilion 15",
+    "Mabagal na ang laptop, nag-hang kapag marami ang bukas and ads appear everywhere"
+   ],
+   [
+    "Samsung",
+    "Galaxy A12",
+    "Phone is laggy and hangs, storage is full and pop up ads keep appearing"
+   ],
+   [
+    "Lenovo",
+    "Tab M8",
+    "Tablet is sluggish and freezes often, keeps showing ads after installing apps"
+   ]
+  ]
+ },
+ {
+  "diagnosis": "Laptop hinge / chassis damage",
+  "types": [
+   "laptop"
+  ],
+  "root_cause": "Broken hinge brackets or cracked plastic around the hinge mounts due to stress or impact.",
+  "checks": "Open the lid gently and inspect hinge mounts|Check for cracked hinge covers|Look for pinched display cable|Test lid hold at different angles",
+  "repair_action": "Replace hinge set and repair/replace cracked bezel or hinge covers.",
+  "parts": "Hinge set / chassis parts",
+  "cost": [
+   1500,
+   5500
+  ],
+  "hours": 2,
+  "symptoms": [
+   [
+    "Lenovo",
+    "IdeaPad 330",
+    "The lid wont stay open and the left hinge is broken, plastic cracked near the hinge"
+   ],
+   [
+    "Acer",
+    "Aspire 3",
+    "Laptop screen wobbles and the cover is loose, creaking when opening, hinge snapped"
+   ],
+   [
+    "HP",
+    "14s",
+    "Hinge is broken and the screen separates from the base when opened"
+   ],
+   [
+    "Asus",
+    "X541",
+    "Nahulog ang laptop, basag ang plastic sa may hinge at hindi na maisara nang maayos"
+   ]
+  ]
+ },
+ {
+  "diagnosis": "Laptop trackpad fault",
+  "types": [
+   "laptop"
+  ],
+  "root_cause": "Failed touchpad ribbon connection, swollen battery pressing on trackpad, or driver issue.",
+  "checks": "Check driver and touchpad setting|Inspect for raised/swollen battery|Reseat touchpad ribbon|Test with external mouse",
+  "repair_action": "Reinstall driver; reseat or replace trackpad assembly (and battery if swollen).",
+  "parts": "Trackpad assembly",
+  "cost": [
+   800,
+   2800
+  ],
+  "hours": 1,
+  "symptoms": [
+   [
+    "Dell",
+    "Inspiron 15",
+    "Touchpad is not working, cursor does not move and clicking does not respond"
+   ],
+   [
+    "HP",
+    "Envy 13",
+    "Trackpad is unresponsive and cannot click, mouse works fine"
+   ],
+   [
+    "Asus",
+    "ZenBook",
+    "Hindi gumagana ang touchpad, cursor freezes and click is stuck"
+   ],
+   [
+    "Lenovo",
+    "Yoga 520",
+    "Trackpad click is not working and the cursor jumps around randomly"
+   ]
+  ]
+ },
+ {
+  "diagnosis": "Laptop no display / no POST",
+  "types": [
+   "laptop"
+  ],
+  "root_cause": "Faulty RAM, CPU/GPU solder issue, corrupted BIOS, or display path fault preventing POST.",
+  "checks": "Hard reset (remove battery, hold power)|Reseat RAM|Test with external monitor|Listen for fan/HDD activity and beep codes",
+  "repair_action": "Reseat/replace RAM; reflash BIOS; board-level reflow/replacement if GPU or CPU fault.",
+  "parts": "RAM / BIOS chip / motherboard",
+  "cost": [
+   1000,
+   9000
+  ],
+  "hours": 2.5,
+  "symptoms": [
+   [
+    "HP",
+    "Pavilion g6",
+    "Powers on, fans spin and lights are on but there is no display at all"
+   ],
+   [
+    "Dell",
+    "Inspiron 17",
+    "Laptop turns on but screen stays black, no POST and nothing on external monitor"
+   ],
+   [
+    "Asus",
+    "K43",
+    "Turns on and off by itself, power light on but black screen and no boot"
+   ],
+   [
+    "Acer",
+    "Aspire V3",
+    "Lights on but no display, starts then stops after a few seconds"
+   ]
+  ]
+ },
+ {
+  "diagnosis": "Headphone jack / audio connector fault",
+  "types": [
+   "smartphone",
+   "tablet",
+   "laptop"
+  ],
+  "root_cause": "Debris or damaged contacts in the 3.5 mm jack, or a faulty audio switch.",
+  "checks": "Clean the jack|Test multiple headsets|Check whether the phone thinks headset is plugged in|Test Bluetooth audio as a control",
+  "repair_action": "Clean jack; replace audio jack or sub-board.",
+  "parts": "Headphone jack / audio flex",
+  "cost": [
+   500,
+   1800
+  ],
+  "hours": 0.8,
+  "symptoms": [
+   [
+    "Samsung",
+    "Galaxy A10",
+    "Earphones are not detected and the phone is stuck in headset mode, no sound on speaker"
+   ],
+   [
+    "Oppo",
+    "A5",
+    "Headphone jack is loose and sound only comes out of one earphone"
+   ],
+   [
+    "Asus",
+    "X407",
+    "Laptop headphone port is not working and no audio on the earphones"
+   ],
+   [
+    "Xiaomi",
+    "Redmi 6",
+    "Aux jack has crackling sound when I move the plug, earphone not detected"
+   ]
+  ]
+ }
+]

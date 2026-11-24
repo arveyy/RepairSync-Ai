@@ -940,14 +940,18 @@ dialog::backdrop { background: rgba(10,20,15,.5); backdrop-filter: blur(3px); }
 .leaflet-popup-content { margin: 12px; width: 230px !important; }
 .leaflet-popup-close-button { color: var(--muted) !important; }
 .shop-pin-wrap { background: transparent; border: 0; }
-.shop-pin-face {
-  width: 42px; height: 42px; display: grid; place-items: center; overflow: hidden;
-  border: 3px solid var(--card); border-radius: 50%; background: var(--green-l); color: var(--green-d);
-  box-shadow: 0 4px 12px rgba(0,0,0,.22); font-weight: 800; font-size: 1.05rem;
-  transition: transform .15s ease, box-shadow .15s ease;
+.shop-pin-svg {
+  display: block; overflow: visible; transform-origin: 21px 51px;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,.22));
+  transition: transform .15s ease, filter .15s ease;
 }
-.shop-pin-face img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
-.shop-pin-face.active { transform: scale(1.12); box-shadow: 0 0 0 5px color-mix(in srgb, var(--green) 60%, transparent), 0 6px 16px rgba(0,0,0,.28); }
+.shop-pin-svg.active {
+  transform: scale(1.12);
+  filter: drop-shadow(0 0 0 5px color-mix(in srgb, var(--green) 60%, transparent)) drop-shadow(0 6px 16px rgba(0,0,0,.28));
+}
+.shop-pin-shell { fill: var(--card); }
+.shop-pin-face { fill: var(--green-l); }
+.shop-pin-initial { fill: var(--green-d); font-size: 18px; font-weight: 800; }
 .shop-popup .row { flex-wrap: nowrap; }
 .shop-popup .btn, .shop-popup button { flex: 1; justify-content: center; }
 

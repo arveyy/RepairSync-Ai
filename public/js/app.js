@@ -1050,16 +1050,51 @@ function shopAvatarNode(shop, cls = 'shop-finder-avatar') {
   }
   return h('span', { class: cls + ' letter' }, String(shop.name || '?').trim().charAt(0).toUpperCase());
 }
+let shopPinSeq = 0;
 function shopPinIcon(shop, active = false) {
-  const inner = document.createElement('div');
-  inner.className = 'shop-pin-face' + (active ? ' active' : '');
-  if (shop.logo_path || shop.logo_url) {
-    const img = document.createElement('img');
-    img.src = shop.logo_path ? shopLogo(shop.logo_path) : url(shop.logo_url);
-    img.alt = '';
-    inner.append(img);
-  } else inner.textContent = String(shop.name || '?').trim().charAt(0).toUpperCase();
-  return L.divIcon({ html: inner, className: 'shop-pin-wrap', iconSize: [42, 42], iconAnchor: [21, 21], popupAnchor: [0, -18] });
+  const ns = 'http://www.w3.org/2000/svg';
+  const svgNode = (tag, attrs = {}) => {
+    const node = document.createElementNS(ns, tag);
+    for (const [key, value] of Object.entries(attrs)) node.setAttribute(key, value);
+    return node;
+  };
+  const uid = `shop-pin-${++shopPinSeq}`;
+  const pinPath = 'M21 1C10.5 1 2 9.5 2 21c0 12.5 19 30 19 30s19-17.5 19-30C40 9.5 31.5 1 21 1Z';
+  const faceClip = `url(#${uid}-face)`;
+
+  const svg = svgNode('svg', {
+    class: 'shop-pin-svg' + (active ? ' active' : ''),
+    viewBox: '0 0 42 52', width: 42, height: 52, 'aria-hidden': 'true'
+  });
+  const defs = svgNode('defs');
+  const clip = svgNode('clipPath', { id: `${uid}-face` });
+  clip.append(svgNode('circle', { cx: 21, cy: 21, r: 18 }));
+  defs.append(clip);
+  svg.append(
+    defs,
+    svgNode('path', { class: 'shop-pin-shell', d: pinPath }),
+    svgNode('circle', { class: 'shop-pin-face', cx: 21, cy: 21, r: 18 }),
+    svgNode('path', { class: 'shop-pin-face', d: 'M9 27 21 48 33 27Z' })
+  );
+
+  const logo = shop.logo_path || shop.logo_url;
+  if (logo) {
+    const src = shop.logo_path ? shopLogo(shop.logo_path) : url(shop.logo_url);
+    const image = svgNode('image', {
+      href: src, x: 3, y: 3, width: 36, height: 36,
+      preserveAspectRatio: 'xMidYMid slice', 'clip-path': faceClip
+    });
+    image.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', src);
+    svg.append(image);
+  } else {
+    const initial = svgNode('text', {
+      class: 'shop-pin-initial', x: 21, y: 22,
+      'text-anchor': 'middle', 'dominant-baseline': 'middle'
+    });
+    initial.textContent = String(shop.name || '?').trim().charAt(0).toUpperCase();
+    svg.append(initial);
+  }
+  return L.divIcon({ html: svg, className: 'shop-pin-wrap', iconSize: [42, 52], iconAnchor: [21, 51], popupAnchor: [0, -48] });
 }
 async function fetchRoute(from, to) {
   const endpoint = `https://router.project-osrm.org/route/v1/driving/${from.lng},${from.lat};${to.lng},${to.lat}`

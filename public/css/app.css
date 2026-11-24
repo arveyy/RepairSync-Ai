@@ -526,6 +526,7 @@ main {
   outline: none;
 }
 main:has(.finder-page) { max-width: none; margin: 0; }
+main:focus, main:focus-visible { outline: none; }
 
 /* ============ Floating auth panels ============ */
 .auth-backdrop {

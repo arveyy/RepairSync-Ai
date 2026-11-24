@@ -61,7 +61,8 @@
   --brand-accent-dark-softer: #13200f;
   --brand-accent-tint: rgba(167,207,150,.16);
   --brand-accent-line: rgba(167,207,150,.35);
-  --container: 100%;
+  --container: 1360px;
+  --page-gutter: 32px;
   --radius: 14px;
   --radius-lg: 20px;
   --radius-full: 999px;
@@ -405,7 +406,14 @@ body.app-shell {
 :root[data-theme="dark"] body.app-shell button.primary:hover,
 :root[data-theme="dark"] body.app-shell .btn.primary:hover { background: var(--brand-accent-hover); border-color: var(--brand-accent-hover); }
 
-body.app-shell #main { width: auto; margin-left: var(--sidebar-w); padding: 40px 36px 70px; }
+body.app-shell #main {
+  width: calc(100% - var(--sidebar-w));
+  max-width: calc(var(--container) + var(--page-gutter) + var(--page-gutter));
+  margin-left: calc(var(--sidebar-w) + max(0px, (100% - var(--sidebar-w) - var(--container) - var(--page-gutter) - var(--page-gutter)) / 2));
+  margin-right: auto;
+  padding: 40px var(--page-gutter) 70px;
+}
+body.app-shell #main:has(.finder-page) { width: calc(100% - var(--sidebar-w)); max-width: none; margin-left: var(--sidebar-w); margin-right: 0; }
 body.app-shell .foot { margin-left: var(--sidebar-w); }
 .nav-inner {
   position: relative;
@@ -511,12 +519,13 @@ body.app-shell .foot { margin-left: var(--sidebar-w); }
 .nav-toggle span::after { position: absolute; top: 5px; }
 
 main {
-  max-width: none;
   width: 100%;
-  margin: 0;
-  padding: calc(var(--nav-height) + 56px) 34px 70px;
+  max-width: calc(var(--container) + var(--page-gutter) + var(--page-gutter));
+  margin: 0 auto;
+  padding: calc(var(--nav-height) + 56px) var(--page-gutter) 70px;
   outline: none;
 }
+main:has(.finder-page) { max-width: none; margin: 0; }
 
 /* ============ Floating auth panels ============ */
 .auth-backdrop {
@@ -861,12 +870,12 @@ dialog::backdrop { background: rgba(10,20,15,.5); backdrop-filter: blur(3px); }
 
 /* ============ Footer ============ */
 .foot {
-  text-align: center; padding: 34px 24px 48px; font-size: 13.5px;
+  text-align: center; padding: 34px var(--page-gutter) 48px; font-size: 13.5px;
   color: var(--muted); border-top: 1px solid var(--line);
   background: var(--green-paler);
 }
 :root[data-theme="dark"] .foot { background: #0c1708; }
-.foot span { display: block; }
+.foot span { display: block; max-width: var(--container); margin-inline: auto; }
 .foot-note { font-size: 12px; margin-top: 6px; opacity: .85; }
 
 /* ============ Public nearby-shops finder + map ============ */
@@ -1038,12 +1047,19 @@ dialog::backdrop { background: rgba(10,20,15,.5); backdrop-filter: blur(3px); }
 
 /* ============ Responsive ============ */
 @media (max-width: 960px) {
+  :root { --page-gutter: 20px; }
   .sidebar { transform: translateX(-100%); }
   .sidebar.is-open { transform: translateX(0); }
   body.app-shell .mobilebar { display: flex; align-items: center; }
   body.app-shell .side-scrim { display: block; }
   body.side-open { overflow: hidden; }
-  body.app-shell #main { margin-left: 0; padding: 90px 18px 56px; }
+  body.app-shell #main {
+    width: 100%;
+    max-width: calc(var(--container) + var(--page-gutter) + var(--page-gutter));
+    margin: 0 auto;
+    padding: 90px var(--page-gutter) 56px;
+  }
+  body.app-shell #main:has(.finder-page) { width: 100%; max-width: none; margin: 0; }
   body.app-shell .foot { margin-left: 0; }
 }
 @media (max-width: 900px) {
@@ -1063,6 +1079,7 @@ dialog::backdrop { background: rgba(10,20,15,.5); backdrop-filter: blur(3px); }
   .hero h1 { font-size: 36px; }
 }
 @media (max-width: 640px) {
+  :root { --page-gutter: 16px; }
   .topbar { width: calc(100% - 24px); }
   .brand-mark { width: 66px; height: 66px; }
   .brand { left: 18px; }
@@ -1070,8 +1087,8 @@ dialog::backdrop { background: rgba(10,20,15,.5); backdrop-filter: blur(3px); }
   .nav-actions .btn-outline { display: none; }
   .nav-actions .btn-dark { padding: 8px 13px; font-size: 13px; }
   .userbox > span { display: none; }
-  main { padding: calc(var(--nav-height) + 48px) 14px 50px; }
-  body.app-shell #main { padding: 84px 14px 50px; }
+  main { padding: calc(var(--nav-height) + 48px) var(--page-gutter) 50px; }
+  body.app-shell #main { padding: 84px var(--page-gutter) 50px; }
   .mobile-page { display: none; }
   .hero { padding-top: 34px; } .hero h1 { font-size: 29px; } .hero p { font-size: 15px; }
   .g2, .g3, .g4, .detail { grid-template-columns: 1fr; }
